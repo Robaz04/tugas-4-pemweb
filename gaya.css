@@ -1,0 +1,155 @@
+* {
+    font-family: "Fredoka", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-20deg, rgb(193, 164, 255) 40%, rgb(64, 239, 255));
+}
+
+.input {
+    margin: 100px 0;
+    padding: 20px 25px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+    font-size: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(193, 164, 255);
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.55);
+    width: 584px;
+}
+
+.input h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 584px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: red;
+    opacity: .7;
+}
+
+label {
+    text-align: center;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="date"] {
+    text-align: center;
+}
+
+.jk {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="radio"]:nth-child(2) {
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: rgb(64, 239, 255);
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(47, 178, 190);
+    transform: scale(1.01);
+}
+
+/* DISPLAY DATA */
+
+.container-2 {
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 768px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(193, 164, 255);
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.55);
+}
+
+.container-2 h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container-2 table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.container-2 th {
+    background-color: #69f0ff;
+    border: 2px solid #333;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+}
+
+.container-2 td {
+    padding: 10px;
+    background-color: rgb(193, 164, 255);
+    color: #333;
+    border: 2px solid #333;
+    text-align: left;
+}
